@@ -44,7 +44,6 @@ on:click={showMenu}
             <p><b>Email:</b> {email}</p>
             <p><b>Fullname:</b> {fullname}</p>
             <p><b>Gender:</b> {gender}</p>
-            <p><b>Password:</b> {password}</p>
         </section>
 
         <section class="flex gap-1">
