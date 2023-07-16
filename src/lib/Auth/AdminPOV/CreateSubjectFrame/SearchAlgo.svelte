@@ -5,18 +5,12 @@
     import { auth, db } from "$lib/Database/firebaseConfig";
     import { onSnapshot, collection, orderBy, query, where, getDocs } from "firebase/firestore";
 
-    /** @type {any} */
-    
-
     const searchHandler = () =>
     {
-
-        alert("Just msg me if you want to make it work!!! :D")
-        /* 
         getDocs(query(collection($db, "attendedStudents"), where("name", "==", $adminState.searchValue)))
         .then(snapsResp =>
         {
-            
+            /** @type {any} */
             let fbData = [];
             snapsResp.docs.forEach(doc => 
             {   
@@ -32,17 +26,17 @@
 
             })
             
-        }) */
+        })
 
     }
 
     const detectKey = () =>
     {
-        /* if($adminState.searchValue.trim().length === 0)
+        if($adminState.searchValue.trim().length === 0)
         {
             onSnapshot(query(collection($db, "attendedStudents"), orderBy("createdAt", "asc")),  snapsResp =>
             { 
-                
+                /** @type {any} */
                 let fbData = [];
                 snapsResp.docs.forEach(doc => 
                 {   
@@ -54,7 +48,7 @@
                 })
                 $adminState.fetchAttended = fbData;
             })
-        } */
+        }
         
     }
 
