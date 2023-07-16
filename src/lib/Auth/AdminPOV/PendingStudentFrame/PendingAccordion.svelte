@@ -8,7 +8,6 @@
     export let fullname = "Sample";
     export let gender = "";
     export let isPending = "";
-    export let password = "";
     export let photoURL = "";
 
     const thisComp = {

@@ -1,6 +1,5 @@
 <script>
     import { adminKey, adminState } from "$lib/StateManagement/stateMapping";
-    import BaniAccord from "$lib/GenComp/BaniAccord.svelte";
 	import PendingAccordion from "./PendingAccordion.svelte";
 
     /** Database calls */
@@ -45,7 +44,6 @@
                 fullname={pending.fullname}
                 gender={pending.gender}
                 isPending={pending.isPending}
-                password={pending.password}
                 photoURL={pending.photoURL}
                 id={pending.id}
                 />
