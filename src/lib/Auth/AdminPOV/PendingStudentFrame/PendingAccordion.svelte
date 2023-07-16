@@ -39,7 +39,7 @@ on:click={showMenu}
         </section>
 
         <section class="px-4">
-            <p><b>Onhold:</b> {isPending}</p>
+            <p><b>Account Status:</b> {#if isPending} <b class="bg-red-500 px-2 text-white">In waiting list</b> {:else} <b class="bg-green-500 px-2 text-white">Accepted</b> {/if}</p>
             <p><b>Date:</b> {date}</p>
             <p><b>Email:</b> {email}</p>
             <p><b>Fullname:</b> {fullname}</p>
