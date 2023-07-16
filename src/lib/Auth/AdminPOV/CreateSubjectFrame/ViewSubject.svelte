@@ -11,6 +11,7 @@
 	import Attend from "$lib/Auth/StudentPOV/SubjectFrame/Attend.svelte";
 	import FetchAttended from "./FetchAttended.svelte";
 	import ClearAttendance from "./ClearAttendance.svelte";
+	import SearchAlgo from "./SearchAlgo.svelte";
 	
 </script>
 
@@ -44,12 +45,8 @@
             
             <section class="flex items-center">
                 <p class="w-full font-bold">Student Attended: </p>
-
-                <div class="flex w-full">
-                    <input type="text" class="w-full border-2 border-r-0 border-deepBlue focus:outline-none px-2" />
-                    <button class="transition-all hover:font-semibold  active:scale-95  border-2 border-deepBlue px-2 bg-black text-white"
-                    >Search</button>
-                </div>
+                <!--Search button component-->
+                <SearchAlgo />
             </section>
 
             <!--Main Screen for student attendance-->

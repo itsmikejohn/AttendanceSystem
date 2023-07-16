@@ -17,9 +17,14 @@ export const adminState = writable({
     /** @type {any} */
     fetchAttended: [],
 
+    /** @type {string} */
+    searchValue: "",
+
     //pending students
     /** @type {any} */
     fetchPendingStud: [],
+
+
 })
 
 export const studentState = writable({
